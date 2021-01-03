@@ -1,0 +1,29 @@
+<html>
+
+<head></head>
+
+<body style="
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    ">
+  <input name="username" placeholder="Input username">
+  <input name="password" placeholder="Input password">
+</body>
+
+<script>
+  // Computed Properties
+  var state = {};
+
+  var onKeyup = event => {
+    var value = event.target.value;
+    var name = event.target.name;
+
+    state[name] = value;
+  }
+
+  username.addEventListener('keyup', onKeyup);
+  password.addEventListener('keyup', onKeyup);
+</script>
+
+</html>
